@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.0.1] - 2022-05-08
+- shell and kernel now use the same python interpreter
+- fixes issue crashing when trusting notebooks
+- fixes issue crashing when copying README.ipynb
+
 ## [2.0.0] - 2022-05-23
 ### Changed
 - service is now ran via `dynamic-sidecar`
