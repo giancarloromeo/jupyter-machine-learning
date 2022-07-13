@@ -8,7 +8,7 @@ INFO="INFO: [$(basename "$0")] "
 
 # Trust all notebooks in the notebooks folder
 echo "$INFO" "trust all notebooks in path..."
-find "${NOTEBOOK_BASE_DIR}" -name '*.ipynb' -type f | xargs -I % /bin/bash -c 'jupyter trust % || true'
+find "${NOTEBOOK_BASE_DIR}" -name '*.ipynb' -type f | xargs -I % /bin/bash -c 'jupyter trust "%" || true' || true
 
 
 # Configure
