@@ -12,3 +12,5 @@ RUN $HOME/.pyenv/versions/lab-venv/bin/pip --no-cache install \
     -r ${NOTEBOOK_BASE_DIR}/requirements.txt
 
 USER root
+ENV TF_FORCE_GPU_ALLOW_GROWTH=true
+
